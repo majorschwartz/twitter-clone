@@ -9,16 +9,30 @@
 }
 
 .tweetBox__input {
-  padding: 4px;
+  padding: 4px 0px 4px 4px;
   display: flex;
 }
 
-.tweetBox__input > input {
+.tweetBox__input > textarea {
   flex: 1;
-  margin-left: 8px;
+  position: relative;
+  margin-left: 4px;
   font-size: 14px;
-  border: none;
+  border: 1px solid var(--twitter-background);
+  border-radius: 8px;
+  padding: 8px;
   outline: none;
+  overflow-wrap: normal;
+  resize: none;
+  font-family: inherit;
+  /* Hiding scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tweetBox__input > textarea::-webkit-scrollbar {
+  /* Hiding scrollbar */
+  display: none;
 }
 
 .tweetBox__tweetButton {
@@ -28,8 +42,8 @@
   font-weight: 900 !important;
   text-transform: inherit !important;
   border-radius: 30px !important;
-  width: 80px !important;
-  height: 40px !important;
-  margin-top: 8px !important;
+  width: 75px !important;
+  height: 35px !important;
+  margin-top: 4px !important;
   margin-left: auto !important;
 }
