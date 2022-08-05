@@ -11,7 +11,10 @@ function TweetBox() {
           <textarea placeholder="What's happening?" type="text"></textarea>
           {/* <input placeholder="Enter image URL" type="text"></input> */}
         </div>
-        <Button className="tweetBox__tweetButton">Tweet</Button>
+        <div className="tweetBox__footer">
+          <input type="text" placeholder="Enter Image URL"></input>
+          <Button className="tweetBox__tweetButton">Tweet</Button>
+        </div>
       </form>
     </div>
   );
