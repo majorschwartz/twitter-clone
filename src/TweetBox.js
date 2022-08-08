@@ -16,6 +16,7 @@ function TweetBox() {
       text: tweetMessage,
       avatar: "https://cdn.iconscout.com/icon/free/png-256/profile-2337176-1982537.png",
       image: tweetImage,
+      date: Date.now(),
     });
 
     setTweetMessage("");

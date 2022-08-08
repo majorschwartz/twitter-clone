@@ -16,6 +16,10 @@
   width: 100%;
 }
 
+.post__avatar {
+  padding-right: 6px;
+}
+
 .post__footer {
   display: flex;
   justify-content: space-between;
