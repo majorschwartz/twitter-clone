@@ -1,3 +1,12 @@
 .widgets {
   flex: 0.3;
 }
+
+.widgets__input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 8px;
+  border-radius: 20px;
+  margin: 8px 20px 0px 20px;
+}
