@@ -11,22 +11,23 @@ function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://cdn.iconscout.com/icon/free/png-256/profile-2337176-1982537.png" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
-            <div className="post__username">The Username</div>
+            <div className="post__username">{displayName}</div>
             <div className="post__verified">
-              <VerifiedUserIcon className="post__badge" />
+              {verified && <VerifiedUserIcon className="post__badge" />}
+              {!verified && <span>&nbsp;</span>}
             </div>
-            <div className="post__usertag">@atwitteruser</div>
+            <div className="post__usertag">@{username}</div>
           </div>
           <div className="post__headerDescription">
-            <p>This is some text within the tweet.</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=300%2C280"></img>
+        <img src={image}></img>
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />

@@ -20,20 +20,15 @@
 .tweetBox__footer > input {
   flex: 0.6;
   margin-right: 8px;
-  border: 2px solid black;
+  border: none;
   outline: none;
-  background-color: white;
+  background-color: var(--twitter-background);
   border-radius: 100px;
   padding: 6px;
 }
 
-.tweetBox__footer > input:focus {
-  border: 2px solid gray;
-}
-
-.tweetBox__footer > input::placeholder {
-  text-align: center;
-  padding-right: 6px;
+.tweetBox__footer > input[type="text"] {
+  padding-left: 12px;
 }
 
 .tweetBox__input > textarea {
