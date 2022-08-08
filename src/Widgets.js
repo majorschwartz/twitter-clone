@@ -13,7 +13,7 @@ function Widgets() {
       </div>
 
       <div className="widgets__widgetContainer">
-        <h2>Whats Happening</h2>
+        <h2>What's Happening</h2>
         <TwitterTweetEmbed tweetId={"1556348857625092096"} />
         <TwitterTimelineEmbed sourceType="profile" screenName="elonmusk" options={{ height: 400 }} />
         <TwitterShareButton url={"https://google.com/"} options={{ text: "Google Share" }} />
