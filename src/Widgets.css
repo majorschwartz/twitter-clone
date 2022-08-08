@@ -1,6 +1,7 @@
 .widgets {
   flex: 0.3;
   margin-left: 12px;
+  overflow: hidden;
 }
 
 .widgets__input {
